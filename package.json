@@ -1,0 +1,19 @@
+{
+  "name": "sol-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ronald115/vercelTest.git"
+  },
+  "author": "Ronald",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ronald115/vercelTest/issues"
+  },
+  "homepage": "https://github.com/Ronald115/vercelTest#readme"
+}
