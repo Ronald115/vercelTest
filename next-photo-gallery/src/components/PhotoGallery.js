@@ -66,7 +66,7 @@ const PhotoGallery = ({ section }) => {
         <Box
           sx={{
             width: '375px', // Ancho simulado de un dispositivo móvil
-            height: '600px', // Alto simulado de un dispositivo móvil
+            height: '60vh', // Alto simulado de un dispositivo móvil
             borderRadius: '20px',
             boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
             overflow: 'hidden',
