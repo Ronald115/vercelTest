@@ -57,16 +57,22 @@ const PhotoGallery = ({ section }) => {
         sx={{
           width: '100%',
           maxWidth: 'calc(100% - 40px)', // 20% margen izquierdo y derecho
-          maxHeight: 'calc(100vh - 40px)', // 20% margen arriba y abajo
+          maxHeight: 'calc(100vh - 80px)', // Ajustar altura para evitar choque con el encabezado y el botón
           justifyContent: 'center',
           alignItems: 'center',
           position: 'relative', // Para el posicionamiento de los botones
+          marginTop: '0', // Sin margen superior en móviles
+          '@media (max-width: 600px)': {
+            maxWidth: 'calc(100% - 20px)', // Ajustar margen en móviles
+            maxHeight: 'calc(100vh - 80px)', // Ajustar altura en móviles para permitir espacio
+            marginTop: '80px', // Añadir margen superior en móviles para evitar superposición
+          },
         }}
       >
         <Box
           sx={{
             width: '375px', // Ancho simulado de un dispositivo móvil
-            height: '60vh', // Alto simulado de un dispositivo móvil
+            height: '667px', // Alto simulado de un dispositivo móvil
             borderRadius: '20px',
             boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
             overflow: 'hidden',
@@ -75,6 +81,11 @@ const PhotoGallery = ({ section }) => {
             alignItems: 'center',
             background: '#fff', // Fondo blanco para el contenedor
             position: 'relative',
+            '@media (max-width: 600px)': {
+              width: '100%',
+              height: '100%', // Hacer la imagen ocupar el 100% de la altura en móviles
+              borderRadius: '20px', // Mantener bordes redondeados en móviles
+            },
           }}
         >
           {/* Botón de flecha hacia atrás */}

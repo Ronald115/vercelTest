@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import PhotoGallery from '../components/PhotoGallery';
-import { AppBar, Toolbar, Typography, Box, Paper } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu'; // Ícono de menú
 import CatIcon from '@mui/icons-material/Pets'; // Ícono de gato
 
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <Box sx={{ flexGrow: 1, paddingRight: '0px' }}>
       <AppBar sx={{ background: 'transparent', boxShadow: 'none', paddingRight: '0px' }}>
-        <Toolbar sx={{paddingRight: '0px'}}>
+        <Toolbar sx={{ paddingRight: '0px' }}>
           <Box sx={{ flexGrow: 1 }} /> {/* Espaciador */}
           <Box
             sx={{
@@ -24,6 +24,7 @@ export default function Home() {
               display: 'flex',
               alignItems: 'center',
               boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+              zIndex: 1, // Asegura que esté por encima de las imágenes
             }}
           >
             <Box
@@ -42,6 +43,8 @@ export default function Home() {
                   fontWeight: 'bold',
                   display: 'flex',
                   alignItems: 'center',
+                  fontSize: '16px', // Ajusta el tamaño de fuente según tus necesidades
+                  margin: '0', // Elimina el margen superior e inferior
                 }}
               >
                 Álbum de fotos de Sol
