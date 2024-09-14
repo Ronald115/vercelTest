@@ -46,7 +46,7 @@ const Sidebar = ({ onSectionChange }) => {
         sx={{
           '& .MuiDrawer-paper': {
             width: 250,
-            background: '#ffcc80', // Fondo amarillo
+            background: '#fff59d', // Fondo amarillo
             borderRadius: '10px',
             padding: '10px', // Margen interno para el contenido
             display: 'flex',
